@@ -1,12 +1,8 @@
+import { RouterProvider } from "react-router"
+import router from "./app/router"
 
 function App() {
-  return (
-    <main className="flex min-h-screen items-center justify-center bg-[#FAF7F2]">
-      <h1 className="text-5xl font-bold text-[#E97845]">
-        CretaFlow
-      </h1>
-    </main>
-  )
+  return <RouterProvider router={router}/>;
 }
 
 export default App

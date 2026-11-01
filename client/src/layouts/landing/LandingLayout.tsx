@@ -1,6 +1,6 @@
 function LandingLayout(){
     return(
-        <>hello</>
+        <>landing page</>
     )
     
 }

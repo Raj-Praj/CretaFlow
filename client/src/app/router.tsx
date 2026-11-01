@@ -5,7 +5,7 @@ import LoginPage from "../features/auth/pages/LoginPage";
 import RegisterPage from "../features/auth/pages/RegisterPage";
 import DashboardLayout from "../layouts/dashboard/DashboardLayout";
 
-export const router =createBrowserRouter([
+ const router =createBrowserRouter([
     {
         path:"/",
         element:<LandingLayout/>,
@@ -25,12 +25,38 @@ export const router =createBrowserRouter([
         children:[
             {
                 index:true,
-                element:<></>
+                element:<h1>Overview</h1>
             },
             {
-                path:"/"
-            }
-        ]
+                path:"projects",
+                element:<h1>projects</h1>
+            },
+            {
+                path:"tasks",
+                element:<h1>tasks</h1>
+            },
+            {
+                path:"chat",
+                element:<h1>chat</h1>
+            },
+            {
+                path:"contributions",
+                element:<h1>contributions</h1>
+            },
+            {
+                path:"risk-radar",
+                element:<h1>risk radar</h1>
+            },
+            {
+                path:"notifications",
+                element:<h1>notifications</h1>
+            },
+            {
+                path:"settings",
+                element:<h1>settings</h1>
+            },
+        ],
 
-    }
-])
+    },
+]);
+export default router;
