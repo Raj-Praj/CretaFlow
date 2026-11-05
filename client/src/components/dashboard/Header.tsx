@@ -1,5 +1,5 @@
 import { Bell, Search, UserRound,Menu} from "lucide-react";
-import { useState } from "react";
+
 
 type HeaderProps={
     onMenuClick:()=>void;
@@ -9,7 +9,7 @@ export default function Header({onMenuClick}:HeaderProps){
     
     return(
         <>
-        <header className="w-full h-15 bg-white border-b border-gray-200 flex items-center justify-between px-2 py-8 md:py-8 md:px-8 ">
+        <header className="w-full h-15 bg-white shadow-lg border-b border-gray-200 flex items-center justify-between px-2 py-8 md:py-8 md:px-8 ">
                     <button 
                     onClick={onMenuClick}
                     className=" md:hidden  flex justify-center items-center w-10 h-10  px-2 rounded-lg hover:bg-[#F8F8F6]">

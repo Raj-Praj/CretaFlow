@@ -11,7 +11,7 @@ function DashboardLayout(){
     return(
         <>
         
-        <div className="w-full h-screen flex ">
+        <div className="w-full h-full flex ">
             {/*sidebar*/}
            <Sidebar
            isOpen={isSidebarOpen}
@@ -19,12 +19,12 @@ function DashboardLayout(){
            />
 
              
-             <div className="w-full h-min-screen bg-red-400 flex flex-col">
+             <div className="w-full min-h-screen  flex flex-col">
                 <Header
                 onMenuClick={()=>setIsSidebarOpen(true)}
                 />
                 
-              <main className="flex-1 p-8">
+              <main className="w-full h-screen ">
                   <Outlet/>
               </main>
             </div>

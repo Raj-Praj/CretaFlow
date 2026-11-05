@@ -4,6 +4,7 @@ import LandingLayout from "../layouts/landing/LandingLayout";
 import LoginPage from "../features/auth/pages/LoginPage";
 import RegisterPage from "../features/auth/pages/RegisterPage";
 import DashboardLayout from "../layouts/dashboard/DashboardLayout";
+import OverviewPage from "../features/overview/pages/Overview";
 
  const router =createBrowserRouter([
     {
@@ -25,7 +26,7 @@ import DashboardLayout from "../layouts/dashboard/DashboardLayout";
         children:[
             {
                 index:true,
-                element:<h1>Overview</h1>
+                element:<OverviewPage/>
             },
             {
                 path:"projects",
